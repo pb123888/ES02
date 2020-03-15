@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let citys = { pName:'广东', citys:[{ cName:'广州'},{cName:'深圳'},{cName:'江门'},{cName:'韶关'}]};
+        let {pName,citys: [{ cName: captial},{cName:Special}, ...other]} = citys;
+        console.log(pName,captial,Special,other);
+    
+    </script>
+
+</body>
+</html>

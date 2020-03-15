@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Course;
+        {
+            var _name = null;
+            Course = function (name){
+                _name = name;
+            }
+            Course.prototype.setNmae = function (value){
+                _name = value;
+            }
+            Course.prototype.getNmae = function () {
+                return _name;
+            }
+        }
+        let course = new Course('spl');
+        console.log(course.getNmae());
+        course.setNmae('vue');
+        console.log(course.getNmae());
+        console.log(_name);
+    
+    </script>
+</body>
+</html>
